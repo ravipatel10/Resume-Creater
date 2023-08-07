@@ -2,11 +2,15 @@ const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const dotenv = require("dotenv");
+const path = require("path");
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const frontend = path.join(__dirname,'../frontend/build');
+app.use(express.static(frontend));
 
 const transporter = nodemailer.createTransport({
   service: 'outlook',
