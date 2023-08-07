@@ -1,0 +1,46 @@
+
+.heading {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 110%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.templatesList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 61%;
+}
+
+.template {
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    margin: 1rem;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+    border-width: thick;
+}
+
+.template img {
+    width: 100%;
+    height: auto;
+}
+
+.template:hover {
+    border-color: #38b2ac;
+}
+
+
+@media screen and (max-width: 768px) {
+    .templatesList {
+        max-width: 100%;
+        margin-left: 6%;
+    }
+}
