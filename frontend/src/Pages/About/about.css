@@ -3,6 +3,8 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #2b2f33; 
+    color: white;
   }
   
   .about-container h2 {
